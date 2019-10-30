@@ -1,0 +1,26 @@
+<p>appuntamenti works!</p>
+<button class="btn btn-primary" (click)="addappuntamento()">Aggiungi manualmente un appuntamento</button>
+<hr>
+<br><br>
+<div class='app'>
+
+  <div class='app-top'>
+    <button class="btn btn-primary btn-xs" (click)='toggleVisible()'>toggle visible</button> <a>&nbsp;&nbsp;</a>
+    <button class="btn btn-primary btn-xs" (click)='toggleWeekends()'>toggle weekends</button><a>&nbsp;&nbsp;</a>
+    <button class="btn btn-primary btn-xs" (click)='gotoPast()'>go to a date in the past</button><a>&nbsp;</a>
+    (also, click a date/time to add an event)
+  </div>
+
+
+  <div class='app-calendar' *ngIf="calendarVisible">
+    <full-calendar #calendar defaultView="dayGridMonth" [header]="{
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        }" [plugins]="calendarPlugins" [weekends]="calendarWeekends" [events]="calendarEvents"
+      (dateClick)="openDialog($event)"></full-calendar>
+  </div>
+
+
+
+</div>

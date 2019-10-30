@@ -1,0 +1,34 @@
+{
+  "utenti": [
+    {
+      "id": "rft5",
+      "nome": "atrwrfg",
+      "cognome": "trwt",
+      "eta": "weefaefefe",
+      "sesso": "e",
+      "indirizzo": "Ffwffwe",
+      "email": "ewfwf",
+      "telefono": "123456"
+    },
+    {
+      "id": "2",
+      "nome": "Francesco",
+      "cognome": "hdhhd",
+      "eta": "19",
+      "sesso": "M",
+      "indirizzo": "via prova",
+      "email": "3924070599",
+      "telefono": "76666"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+  <p>Scrivi qualcosa</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.start">
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.date">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button class="btn btn-info" mat-button (click)="onNoClick()">No Thanks</button>
+  <a>&nbsp;&nbsp;</a>
+  <button class="btn btn-info" mat-button [mat-dialog-close]="data" >Ok</button>
+</div>
